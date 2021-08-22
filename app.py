@@ -8,7 +8,7 @@ from flask import Flask, request, render_template
 app = Flask(__name__)
 
 # this loads the model to our website
-model = pickle.load(open("../ufo-model.pkl", "rb"))
+model = pickle.load(open("ufo-model.pkl", "rb"))
 
 # decorater 
 @app.route('/')#URL here which calls the index.html rendering the template
